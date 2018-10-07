@@ -1,0 +1,117 @@
+<?php
+include "header.php"
+?>
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="PiLogo.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #FFFF00; padding-left: 10px; padding-right: 10px;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #008000;
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 12px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 6px 0;
+}
+
+img.avatar {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    width: 40%;
+}
+
+span.pwd{
+    float: right;
+    padding-top: 16px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+#company { position:absolute; left: 50%;
+  width: 400px; margin-left: -200px;
+  bottom: 220px; font-size: 0.8em;
+  color: #ccc; text-align: center; }
+
+#company .content { border-radius: 10px;
+  background-color: rgba(0,0,0,0.3);
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
+  text-shadow: 0 0 2px black;
+  display: inline-block;
+  padding: 0 15px;
+  color: white; }
+
+
+</style>
+</head>
+
+<body background="datacenter2.jpg">
+  <title> Pi Login</title>
+<br><br><br><br><br>
+<div class="container">
+  <form action="lgn.php">
+    <div class="imgcontainer">
+      <img src="PiLogo2.jpg" alt="Avatar" class="avatar" >
+    </div>
+    <label for="uname"><b>Username</label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <br><br>
+    <label for="pwd"><b>Password</label>
+    <input type="password" placeholder="Enter Password" name="pwd" required>
+
+    <br><br>
+    <b>Department: <select name="dept">
+                        <option value="BID">BID</option>
+                        <option value="FINANCE">FINANCE</option>
+						            <option value="PMO">PMO</option>
+						            <option value = "OPERATIONS">OPERATIONS</option>
+                   </select>
+
+    <br><br>
+    <div class="buttons">
+      <button type="submit">Login</button>
+      <button type="reset">Reset</button>
+    </div>
+
+  </form>
+</div>
+
+<div id="company">
+<div class="content">
+Copyright &copy; Pi DATACENTERS PVT LTD </div>
+</div>
+
+</body>
+</html>

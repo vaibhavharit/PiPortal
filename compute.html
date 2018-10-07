@@ -1,0 +1,41 @@
+<html>
+<head>
+	<link rel="shortcut icon" type="image/png" href="PiLogo.jpg">
+	<link rel="stylesheet" href="Style.css">
+
+</head>
+<body background="Background3.jpg">
+	<title> Compute </title>
+
+<img src="PiLogo3.jpg" width="200px">
+
+<center><p class="w3-myfont">Compute Management</p></center>
+
+<center>
+<form>
+	<font size="5">Client Name: <input type = "text" name = "client_name"></font><br>
+	<br>
+	<font size="5">Client Number: <input type = "text" name = "client_number"></font><br>
+	<br>
+	<font size="5">Client Email: <input type = "text" name = "client_email"></font><br>
+	<br>
+  <font size="5">VM Provisioned on: <select id = 'store_type' name = 'store_type'>
+		<option value = "harbour1+">Harbour1+</option>
+		<option value = "harbour1">Harbout1</option>
+		<option value = "dedicated">Dedicated Server</option>
+    <option value = "production">Production Server</option>
+	</select>
+  <font size="3">Specify Server (for Dedicated or Production server): <input type = "text" name = "server_type"></font><br>
+	<br>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+	 Upload Checklist:
+	 <input type="file" name="fileToUpload" id="fileToUpload">
+ </form><br><br>
+  <font size="5">Submitted By: <input type = "text" name = "submitted_by"></font><br>
+  <br>
+	<br>
+	<button type = "submit">Submit</button>
+</form>
+</center>
+<body>
+</html>

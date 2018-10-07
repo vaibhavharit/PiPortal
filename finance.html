@@ -1,0 +1,43 @@
+<html>
+<head>
+	<link rel="shortcut icon" type="image/png" href="PiLogo.jpg">
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body background="Background3.jpg">
+	<title>Finance</title>
+
+<img src="PiLogo3.jpg" width="200px">
+
+<center><p class="w3-myfont">Finance Department</p></center>
+
+<center>
+<script type="text/javascript">
+  function submitForm(action) {
+    var form = document.getElementById('fin');
+    form.action = action;
+    form.submit();
+  }
+</script>
+
+<form id="fin">
+	<font size="5">Client Name: <input type = "text" name = "client_name"></font><br>
+	<br>
+	<font size="5">Client Number: <input type = "text" name = "client_number"></font><br>
+	<br>
+	<font size="5">Client Email: <input type = "text" name = "client_email"></font><br>
+	<br>
+	<font size="5">Client Status: <input type = "text" name = "client_status"></font><br>
+	<br> <br>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="blob_file" id="blob_file">
+	</form>
+	<br>
+	<a href = "ViewtableFin.php"><font size="4">Click here</a> to view the Database record.
+<br><br>
+  <input type="button" id="but" onclick="submitForm('fin1.php')" value="Agree" />
+  <input type="button" id="but" onclick="submitForm('fin2.php')" value="Reject" />
+
+</form>
+</center>
+<body>
+</html>

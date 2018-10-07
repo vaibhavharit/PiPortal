@@ -1,0 +1,33 @@
+.w3-myfont {
+  font-family: "Tangerine", sans-serif;
+  font-size: 50px;
+}
+
+button {
+    background-color: #008000;
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    width: 9%;
+    font-size: 13px;
+    border-radius: 12px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#but {
+    width: 60em;  height: 4em;
+    background-color: #008000;
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    width: 9%;
+    font-size: 13px;
+    border-radius: 12px;
+}
